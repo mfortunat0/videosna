@@ -1,0 +1,61 @@
+.FloatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.AppMainContainer {
+  width: 100vw;
+}
+
+.AppMainContainer nav {
+  position: absolute;
+  width: 100%;
+  padding: 16px;
+}
+
+.AppMainContainer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.AppMainContainer nav ul li {
+  padding: 6px;
+}
+
+.AppMainContainer nav ul li,
+.AppMainContainer nav ul a {
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  z-index: 999;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.AppMainContainer nav ul li:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .AppMainContainer nav ul li,
+  .AppMainContainer nav ul a {
+    font-size: 14px;
+  }
+}

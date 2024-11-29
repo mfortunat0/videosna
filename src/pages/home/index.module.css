@@ -1,0 +1,523 @@
+.HeroSection {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.HeroSection img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  max-height: 320px;
+}
+
+.HeroSection video {
+  z-index: -999;
+  width: 26vw;
+  filter: brightness(0.1);
+}
+
+.WorksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 86px 64px 86px 64px;
+  background: var(--primary-gray);
+  width: 100%;
+}
+
+.WorksSection h2 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 86px;
+}
+
+.WorksSection h2 span {
+  font-size: 58px;
+  font-weight: 700;
+}
+
+.WorksSection > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.WorksSection .Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 45%;
+  padding: 48px;
+  border-radius: 2px;
+}
+
+.WorksSection .Card:first-child {
+  background-color: var(--primary-white);
+  -webkit-box-shadow: 0px 0px 12px 0px var(--primary-white);
+  -moz-box-shadow: 0px 0px 12px 0px var(--primary-white);
+  box-shadow: 0px 0px 12px 0px var(--primary-white);
+}
+
+.WorksSection .Card:last-child {
+  background-color: #445d4c;
+  -webkit-box-shadow: 0px 0px 12px 0px #445d4c;
+  -moz-box-shadow: 0px 0px 12px 0px #445d4c;
+  box-shadow: 0px 0px 12px 0px #445d4c;
+}
+
+.WorksSection .Card > a > img {
+  height: 120px;
+  border-radius: 50%;
+}
+
+.WorksSection .Card > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  animation: opacity 1s;
+  transition: opacity 1s;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ServicesSection {
+  background-color: var(--primary-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 86px;
+}
+
+.ServicesSection h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 96px;
+}
+
+.ServicesSection .CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 96px;
+  justify-content: space-around;
+}
+
+.ServicesSection .Card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+  background-color: #030303;
+  border-radius: 2px;
+  gap: 16px;
+  background-color: #030303;
+  -webkit-box-shadow: 0px 0px 12px 0px #030303;
+  -moz-box-shadow: 0px 0px 12px 0px #030303;
+  box-shadow: 0px 0px 12px 0px #030303;
+}
+
+.ServicesSection .Card img {
+  height: 36px;
+  width: 36px;
+  background-color: var(--primary-white);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.ServicesSection .Card svg {
+  fill: var(--primary-white);
+  font-size: 36px;
+}
+
+.ServicesSection .Card:nth-child(5) svg,
+.ServicesSection .Card:nth-child(6) svg {
+  background-color: var(--primary-white);
+  border-radius: 6px;
+  height: 36px;
+  width: 36px;
+}
+
+.ServicesSection .Card:nth-child(6) svg {
+  fill: #030303;
+}
+
+.ServicesSection .Card:nth-child(4) svg {
+  font-size: 41px;
+}
+
+.ServicesSection .Card p {
+  font-size: 14px;
+  color: var(--primary-white);
+  line-height: 28px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ServicesSection .Card p span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ServicesSection .Card h3 {
+  color: var(--primary-white);
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.ServicesSection .Card:last-child {
+  justify-self: center;
+  align-self: center;
+}
+
+.SkillsSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 96px;
+  background-color: #030303;
+}
+
+.SkillsSection div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 24px;
+}
+
+.SkillsSection div h1 {
+  color: var(--primary-white);
+  font-size: 48px;
+  text-align: center;
+}
+
+.SkillsSection div p {
+  color: var(--primary-white);
+  font-weight: 300;
+  line-height: 28px;
+  font-style: italic;
+}
+
+.SkillsSection div p span {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.SkillsSection div:first-child {
+  border: 2px solid var(--primary-white);
+  border-radius: 2px;
+  padding: 24px;
+  justify-content: center;
+}
+
+.SkillsSection div:last-child img {
+  width: 80%;
+  height: 480px;
+  border-radius: 4px;
+}
+
+.ContactSection {
+  background-color: #030303;
+  padding: 86px;
+}
+
+.ContactSection hr {
+  height: 2px;
+  background-color: var(--primary-white);
+  width: 100%;
+  border-radius: 4px;
+}
+
+.ContactSection h1 {
+  margin-left: 16px;
+  font-weight: 300;
+  color: var(--primary-white);
+  margin-top: 48px;
+  font-size: 48px;
+}
+
+.ContactSection footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 48px 48px 0px 48px;
+  height: 100%;
+}
+
+.ContactSection footer div {
+  display: flex;
+  align-items: end;
+}
+
+.ContactSection footer div span {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ContactSection footer div a svg {
+  fill: var(--primary-blue);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.ContactSection footer > div a:last-child svg {
+  fill: var(--primary-green);
+}
+
+.ContactSection footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactSection footer img {
+  width: 140px;
+  position: relative;
+  top: 36px;
+}
+
+.ContactSection footer form {
+  display: flex;
+  height: 100%;
+  align-items: end;
+  gap: 8px;
+}
+
+.ContactSection footer form input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.ContactSection footer form button {
+  background-color: #4caf50;
+  color: var(--primary-white);
+  padding: 11px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+@media (max-width: 1230px) {
+  .WorksSection h2 {
+    font-size: 38px;
+  }
+
+  .WorksSection h2 span {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .HeroSection img {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .ContactSection {
+    padding: 48px;
+  }
+
+  .ContactSection footer {
+    padding: 12px 12px 48px 12px;
+  }
+
+  .WorksSection h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .WorksSection h2 span {
+    font-size: 50px;
+  }
+
+  .WorksSection .Card {
+    width: 48%;
+  }
+
+  .ServicesSection .Card {
+    width: 40%;
+  }
+
+  .SkillsSection div h1 {
+    font-size: 36px;
+  }
+
+  .SkillsSection div:last-child img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .ContactSection footer {
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+  }
+
+  .ContactSection h1 {
+    text-align: center;
+  }
+
+  .ContactSection footer div {
+    width: 100%;
+  }
+
+  .ContactSection footer div svg {
+    display: none;
+  }
+
+  .ContactSection footer form {
+    width: 100%;
+  }
+
+  .ContactSection footer form input {
+    width: 70%;
+  }
+
+  .WorksSection > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+  }
+
+  .WorksSection .Card > a > img {
+    height: 140px;
+  }
+
+  .WorksSection .Card {
+    width: 90%;
+  }
+
+  .HeroSection img {
+    max-height: 160px;
+  }
+
+  .ServicesSection {
+    padding: 96px 12px 96px 12px;
+  }
+
+  .ServicesSection .Card {
+    width: 45%;
+  }
+
+  .ServicesSection .CardContainer {
+    gap: 48px;
+  }
+
+  .SkillsSection {
+    padding: 96px 12px 96px 12px;
+    gap: 12px;
+  }
+
+  .SkillsSection div:last-child img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .SkillsSection div:last-child {
+    width: 35%;
+  }
+
+  .SkillsSection div:first-child {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .WorksSection h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .WorksSection h2 span {
+    font-size: 40px;
+  }
+
+  .HeroSection img {
+    max-height: 100px;
+  }
+
+  .WorksSection {
+    padding: 86px 24px 86px 24px;
+  }
+
+  .WorksSection .Card {
+    padding: 24px;
+  }
+
+  .WorksSection .Card > a > img {
+    height: 100px;
+  }
+
+  .ServicesSection .Card {
+    width: 72%;
+  }
+
+  .ServicesSection h2 {
+    text-align: center;
+  }
+
+  .SkillsSection {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .SkillsSection div:last-child {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    width: 90vw;
+    height: 70%;
+  }
+
+  .SkillsSection div:first-child {
+    width: 100%;
+  }
+
+  .ContactSection h1 {
+    font-size: 32px;
+  }
+
+  .ContactSection {
+    padding: 30px;
+  }
+
+  .ContactSection footer {
+    padding: 12px 0px 96px 0px;
+  }
+
+  .ContactSection footer form button {
+    min-width: 120px;
+  }
+  .ContactSection footer form input {
+    height: 60px;
+  }
+}
